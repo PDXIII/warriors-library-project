@@ -1,0 +1,16 @@
+<h1>Welcome to our book list</h1>
+
+{{#each books}}
+  <section class="book">
+    <h2>{{title}}</h2>
+    <p>
+      Author:
+      {{author}}
+      <br />
+      Rating:
+      {{rating}}
+      <br />
+      <a href="/books/{{_id}}">More …</a>
+    </p>
+  </section>
+{{/each}}
