@@ -11,7 +11,12 @@
   </label>
   <label>
     Author:
-    <input name="author" type="text" />
+    <select name="author">
+      <option value=""></option>
+      {{#each authors}}
+        <option value="{{this._id}}"> {{this.name}}</option>
+      {{/each}}
+    </select>
 
   </label>
   <label>

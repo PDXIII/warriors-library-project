@@ -1,0 +1,16 @@
+<h1>Welcome to our authors list</h1>
+
+{{#each authors}}
+  <section class="author">
+    <h2>{{name}}</h2>
+    <p>
+      age:
+      {{age}}
+      <br />
+      country:
+      {{country}}
+      <br />
+      {{!-- <a href="/authors/{{_id}}">More …</a> --}}
+    </p>
+  </section>
+{{/each}}
